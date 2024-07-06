@@ -1,0 +1,311 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.highlight {
+    color: #ffcc00;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ffd633;
+}
+
+.order-form {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.order-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.order-form input,
+.order-form button {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.order-form button {
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+    background-color: #ffd633;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h1 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonials h1 {
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin-bottom: 40px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.testimonial blockquote {
+    margin: 20px;
+}
+
+.testimonial blockquote p {
+    font-style: italic;
+}
+
+.testimonial blockquote cite {
+    font-weight: bold;
+    display: block;
+}
+
+.menu {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.menu-item h2 {
+    margin-top: 10px;
+}
+
+.menu-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h1 {
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.service-card h2 {
+    margin-top: 10px;
+}
+
+.service-card p {
+    margin-top: 10px;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    padding: 10px;
+    margin: 5px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #ffd633;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-content div {
+        margin-bottom: 20px;
+    }
+    
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.about img {
+  border-radius: 50%;
+  width: 100%; /* Make the image take up the full width of its container */
+  height: auto; /* Maintain aspect ratio by letting height adjust automatically */
+}.triangle-shape {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  background-image: url("about.png"); /* Set the background image */
+  background-size: cover; /* Make sure the image covers the entire triangle */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%); /* Create a triangle shape */
+}
